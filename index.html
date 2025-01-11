@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the Website -->
+        <title>Pure Pools Constructora</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="./blackbg.svg" type="image/x-icon">
+        <!-- For other formats, you can use -->
+        <!-- <link rel="icon" href="/path-to-your-logo/logo.png" type="image/png"> -->
+        <!-- Or for SVG -->
+        <!-- <link rel="icon" href="/path-to-your-logo./logo.svg" type="image/svg+xml"> -->
+    
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="Pure Pools Constructora specializes in sustainable construction and development in Costa Rica, offering high-quality residential and commercial projects with a focus on eco-friendly practices.">
+    
+        <!-- Meta Keywords for SEO -->
+        <meta name="keywords" content="construction, sustainable building, eco-friendly construction, residential projects, commercial projects, Costa Rica, green building, construction company, building services, Pure Pools Constructora">
+    
+        <!-- Meta Author -->
+        <meta name="author" content="Pure Pools Constructora">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+TZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+        /* Global Styling */
+body {
+    color: #000000;
+    line-height: 1.6;
+    font-family: "Open Sans", serif;
+
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar-brand, .nav-link {
+    color: #000000 !important;
+}
+.navbar-toggler-icon {
+    background-color: #bdbcbc;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* First Slide Background */
+.carousel-item:nth-child(1) .hero {
+    background: url('/img/banner1.svg') no-repeat center center;
+}
+
+/* Second Slide Background */
+.carousel-item:nth-child(2) .hero {
+    background: url('/img/banner2.svg') no-repeat center center;
+}
+
+/* Third Slide Background */
+.carousel-item:nth-child(3) .hero {
+    background: url('/img/banner3.svg') no-repeat center center;
+}
+
+/* Adjustments for max-width: 500px */
+@media (max-width: 500px) {
+    .hero {
+        height: 50px; /* Reduced height for small screens */
+        width: 100%; /* Ensure full width */
+        padding: 10px; /* Reduce padding for space efficiency */
+        font-size: 14px; /* Adjust font size */
+        background-position: top center; /* Align background */
+    }
+}
+
+/* Adjustments for min-width: 900px */
+@media (min-width: 900px) {
+    .hero {
+        height: 80vh; /* Slightly reduce height for larger screens */
+        padding: 40px; /* Add more padding for spacious layout */
+        font-size: 18px; /* Increase font size */
+    }
+}
+
+
+.hero h1 {
+    padding-top: 70px;
+    font-size: 3rem;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Services Section */
+.service-icon {
+    font-size: 48px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+.service-item {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px 0;
+}
+footer a {
+    color: #0d6efd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Style for the floating WhatsApp button */
+.whatsapp-btn {
+position: fixed;
+bottom: 50px; /* Position it at the bottom of the screen */
+right: 20px;  /* Position it on the right side */
+background-color: #25D366; /* WhatsApp green */
+color: white;
+border-radius: 50%;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+font-size: 10px;
+z-index: 1000; /* Ensures the button is always on top */
+transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.whatsapp-btn i {
+font-size: 35px;
+}
+.custom-hover {
+    background-color: #29abe2; /* Light blue before hover */
+    color: #fff; /* White text */
+    border: 2px solid transparent; /* Invisible border */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.custom-hover:hover {
+    background-color: #0070bd; /* Darker blue on hover */
+    color: #fff; /* White text remains */
+    border-color: #0070bd; /* Yellow border on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+/* Smooth transition for navbar */
+.navbar {
+    transition: top 0.2s ease-in-out; /* Adjust the timing for smoother animation */
+}
+
+
+
+
+ /* Button container styling */
+ .chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.chat-button:hover {
+  background-color: #1ebc5a;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp icon styling */
+.chat-button img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* Parallax Hero Section */
+.hero-parallax {
+    position: relative;
+    background-image: url('/img/parallax.svg'); /* Your image here */
+    height: 130vh;
+    background-position: center;
+    background-attachment: fixed; /* Creates the parallax effect */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    z-index: 10;
+}
+
+/* Hero Section Text Styling */
+.hero-parallax h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-parallax p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+</style>
+
+</head>
+    
+    
+    
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./blackbg.svg" alt="Pure Pools Logo" style="max-height: 90px; margin-right: 10px;">
+            Pure Pools
+        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                
+                <!-- Icon button to toggle translation element -->
+                <button class="btn btn-link" onclick="toggleTranslate()" aria-expanded="false" style="font-size: 1.5rem;">
+                    <i class="fas fa-globe"></i>
+                </button>
+
+                <!-- Translation element, initially hidden -->
+                <div id="translateContainer" style="display: none; text-align: center;">
+                    <div id="google_translate_element"></div>
+                </div>
+
+                <!-- Translation script -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+
+                    // Function to toggle the translation element
+                    function toggleTranslate() {
+                        const translateContainer = document.getElementById('translateContainer');
+                        translateContainer.style.display = translateContainer.style.display === 'none' ? 'block' : 'none';
+                    }
+                </script>
+
+                <!-- Load Google Translate script -->
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    // JavaScript to hide/show navbar on scroll with smooth transition
+let lastScrollTop = 0; // Track the last scroll position
+const navbar = document.querySelector('.navbar'); // Select the navbar
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down, hide the navbar
+        navbar.style.top = "-100px"; // Adjust the value to match the navbar height
+    } else {
+        // Scrolling up, show the navbar
+        navbar.style.top = "0";
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+});
+
+</script>
+
+
+<!-- Hero Section with Auto Slider -->
+<div id="heroCarousel" class="carousel slide">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+            <div>
+              <h1 class="display-4">Building Your Vision</h1>
+              <p class="lead">Transforming your ideas into reality with precision and passion</p>
+              <a href="#find-us" class="btn btn-primary btn-lg mt-3 custom-hover">Contact Us</a>
+            </div>
+          </div>
+          
+      </div>
+      <!-- Second Slide (Optional) -->
+<div class="carousel-item">
+    <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+        <div>
+            <h1 class="display-4">Creating Your Dream Pool</h1>
+            <p class="lead">From design to construction, we bring your perfect pool vision to life with expertise and care</p>
+            <a href="#find-us" class="btn btn-primary btn-lg mt-3 custom-hover">Get in Touch</a>
+        </div>
+    </div>
+</div>
+
+<!-- Third Slide (Optional) -->
+<div class="carousel-item">
+    <div class="hero d-flex justify-content-center align-items-center text-center" style="min-height: 100vh; background-color: #f4f4f4;">
+        <div>
+            <h1 class="display-4">Comprehensive Pool Maintenance</h1>
+            <p class="lead">Keep your pool in pristine condition year-round with our expert maintenance services</p>
+            <a href="#find-us" class="btn btn-primary btn-lg mt-3 custom-hover">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+  
+    <!-- Carousel Controls (Optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  
+
+<section id="introduction" class="py-5">
+    <div class="container text-center">
+        <a class="navbar-brand" href="#">
+            <img src="blackbg.svg" alt="Pure Pools Logo" style="max-height: 400px; margin-right: 10px;">
+            
+        </a>
+        <h2 class="mb-4">Building Pools with Precision and Care</h2>
+        <p>
+            Welcome to <strong>Pure Pools</strong>, your trusted pool service company proudly located in the heart of Osa, Costa Rica. With a focus on quality, sustainability, and customer satisfaction, we specialize in providing exceptional pool construction, maintenance, repairs, and chemical services tailored to your specific needs. 
+        </p>
+        <p>
+            Our experienced team is committed to building not just pools, but long-lasting relationships with our clients. From designing and constructing your dream pool to maintaining its perfect condition year-round, we ensure every aspect of your pool is managed with the utmost care. Whether it's pool repairs, leak detection, or chemical balancing, our experts provide reliable and efficient solutions.
+        </p>
+        <p>
+            At <strong>Pure Pools</strong>, we transform your vision of the perfect pool into a reality, delivering high-quality services that enhance your backyard experience and add value to your property. Let us help you create the perfect pool for relaxation, entertainment, and enjoyment in the beautiful Osa region.
+        </p>
+        
+    </div>
+</section>
+
+<!-- Contador Animado: Años de Experiencia -->
+<div class="experience-counter">
+    <span id="experienceCount">+0</span>
+    <p>Years of Experience</p>
+</div>
+
+<!-- Contador Animado: Clientes Satisfechos -->
+<div class="satisfied-counter">
+    <span id="clientsCount">+0</span>
+    <p>Finished Projects</p>
+</div>
+
+<style>
+    .experience-counter, .satisfied-counter {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+    }
+
+    .experience-counter span, .satisfied-counter span {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #29abe2; /* Yellow color */
+    }
+
+    .experience-counter p, .satisfied-counter p {
+        font-size: 1.5rem;
+        margin-top: 5px;
+        color: #555;
+    }
+
+    /* Animation */
+    @keyframes countUp {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+</style>
+
+<script>
+    function animateCounter(elementId, target, interval) {
+        const countElement = document.getElementById(elementId);
+        let count = 0;
+
+        function incrementCounter() {
+            if (count < target) {
+                count++;
+                countElement.innerText = `+${count}`;
+                setTimeout(incrementCounter, interval);
+            }
+        }
+
+        incrementCounter();
+    }
+
+    // Intersection Observer to trigger the counters
+    function setupCounters() {
+        const counters = [
+            { id: 'experienceCount', target: 10, interval: 200 },
+            { id: 'clientsCount', target: 500, interval: 1 },
+        ];
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const counter = counters.find((c) => c.id === entry.target.id);
+                    if (counter) {
+                        animateCounter(counter.id, counter.target, counter.interval);
+                        observer.unobserve(entry.target); // Stop observing after triggering
+                    }
+                }
+            });
+        });
+
+        // Observe each counter
+        counters.forEach((counter) => {
+            const element = document.getElementById(counter.id);
+            observer.observe(element);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', setupCounters);
+</script>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5 font-weight-bold">Our Expertise in Pool Services</h2>
+        <div class="row g-4">
+            <!-- Pool Construction -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-swimmer mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3 font-weight-bold" style="color: #0d22ad;">Pool Construction</h4>
+                    <p class="text-muted">We specialize in the design and construction of custom pools, tailored to meet your unique preferences. Whether you envision a luxurious resort-style pool or a simple backyard oasis, we bring your dream to life with precision and excellence.</p>
+                </div>
+            </div>
+            <!-- Maintenance -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-cogs mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3 font-weight-bold" style="color: #0d22ad;">Maintenance</h4>
+                    <p class="text-muted">Our comprehensive pool maintenance services ensure your pool stays in pristine condition year-round. From regular cleanings to equipment checks, we provide the essential upkeep to maintain your pool’s safety and functionality.</p>
+                </div>
+            </div>
+            <!-- Chemicals -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-flask mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3 font-weight-bold" style="color: #0d22ad;">Chemicals</h4>
+                    <p class="text-muted">We offer a full range of premium pool chemicals to ensure optimal water balance and clarity. From chlorine to pH balancers, we provide only the highest-quality products to keep your pool water safe and inviting.</p>
+                </div>
+            </div>
+            <!-- Leaks and Repair -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-wrench mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3 font-weight-bold" style="color: #0d22ad;">Leaks & Repair</h4>
+                    <p class="text-muted">Our expert technicians quickly diagnose and repair any leaks or damages to your pool, ensuring it remains fully operational. We prevent costly water loss and mitigate potential structural issues, preserving the integrity of your investment.</p>
+                </div>
+            </div>
+            <!-- Parts and More -->
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+                <div class="service-item p-4 shadow-lg rounded bg-white">
+                    <i class="service-icon fas fa-cogs mb-3" style="font-size: 3rem; color: #0d22ad;"></i>
+                    <h4 class="mb-3 font-weight-bold" style="color: #0d22ad;">Parts & Accessories</h4>
+                    <p class="text-muted">We provide a wide range of high-quality pool parts and accessories, including pumps, filters, and cleaning equipment. Whether you need replacement parts or upgrades, we ensure your pool continues to run smoothly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS -->
+<script>
+    AOS.init({
+        duration: 800, // Animation duration (in ms)
+        easing: 'ease-in-out', // Easing function
+        once: true // Animation happens only once
+    });
+</script>
+
+
+
+<!-- Parallax Hero Section -->
+<div class="hero-parallax">
+    <div class="hero-content">
+        <h1>Keep Your Pool Sparkling Clean</h1>
+        <p>Your trusted partner for pool maintenance and cleaning services</p>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3 custom-hover">Start Now!</a>
+    </div>
+</div>
+
+
+
+<section id="projects" class="py-5">
+    <div class="container text-center">
+        <h2  class="mb-5 font-weight-bold">Our projects</h2>
+        <div class="row g-4 justify-content-center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"> <!-- Removed data-bs-ride="carousel" -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner.svg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner.svg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner.svg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion Section for Description -->
+    <div class="container text-center mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Read About the Project
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We specialize in delivering exceptional construction services with innovative and sustainable solutions, transforming your ideas into reality. Our team works on residential, commercial, and renovation projects, focusing on quality and client satisfaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Add Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<!-- About Us Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2>About Us</h2>
+                <p>With over 10 years of experience in construction, Pure Pools has built a reputation for delivering exceptional quality in every project we undertake. We specialize in commercial, residential, and renovation construction, always focused on customer satisfaction and innovation.</p>
+                <a href="#quote" class="btn btn-primary btn-md custom-hover">Get a Quote Now</a>
+            </div>
+        
+            <!-- Separator (Added only for small screens) -->
+            <div class="w-100 d-md-none mb-4"></div> <!-- This ensures the separation on small screens -->
+        
+            <div class="col-md-6">
+                <img src="/img/us.svg" class="img-fluid rounded" alt="About Us">
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section id="client-reviews" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">What Our Clients Say</h2>
+        <div class="row">
+            <!-- Review 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <i class="bi bi-person-circle mb-3" style="font-size: 40px; color: #29abe2;"></i> <!-- Bootstrap icon as profile image -->
+                    <h5 class="mb-2">John Doe </h5>
+                    <p class="font-italic">"Pure Pools turned our vision into reality. The team was professional, timely, and always kept us informed throughout the process. Highly recommend them for any commercial project."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Where to Find Us Section -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Where to Find Us</h2>
+        <p>We are located at the heart of the city, easily accessible by all forms of transport. Visit us to discuss your next project or to get a quote for your upcoming construction needs!</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Office Location</h5>
+                <p>123 Construction Lane, Suite 456, City, State, 12345</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Call Us</h5>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Email</h5>
+                <p>info@Pure Pools.com</p>
+            </div>
+            <div class="col-md-6">
+                <h5>WhatsApp</h5>
+                <p> WhatsApp: +1 (234) 567-890</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1682762723143!2d-122.33516708468164!3d47.60801377918598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906b7f90f0a7bb%3A0x25d5e4fdd306c679!2s123%20Construction%20Lane%2C%20Suite%20456%2C%20City%2C%20State%2C%2012345!5e0!3m2!1sen!2sus!4v1609770000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+
+
+ <!-- WhatsApp Chat Button -->
+ <a 
+ href="https://wa.me/63576163" 
+ target="_blank" 
+ class="chat-button" 
+ title="Chat with us on WhatsApp">
+ <i class="fab fa-whatsapp"></i> <span style="margin-left: 8px;">Chat with us</span>
+ </a>
+ 
+
+
+
+<!-- Footer -->
+<footer class="py-5 bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4">
+                <h5>Pure Pools</h5>
+                <p>
+                    At Pure Pools, we specialize in professional Pool and hot tub service, ensuring your oasis stays crystal clear and safe all year round. With years of expertise, our team is committed to providing exceptional care tailored to your needs.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <strong><i class="fas fa-envelope"></i> Email:</strong>
+                        <a href="mailto:info@purepools.com" class="text-white text-decoration-none">info@purepools.com</a>
+                    </li>
+                    <li>
+                        <strong><i class="fas fa-phone-alt"></i> Phone:</strong>
+                        <a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a>
+                    </li>
+                    <li>
+                        <strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong>
+                        <a href="https://wa.me/1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a>
+                    </li>
+                    <li>
+                        <strong><i class="fas fa-business-time"></i> Business Hours:</strong>
+                        <br>Monday to Friday: 8 AM - 6 PM
+                        <br>Saturday: 9 AM - 2 PM
+                        <br>Sunday: Closed
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4 mb-4">
+                <h5>Connect with Us</h5>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="text-center my-4">
+            <img src="./logo.svg" alt="Pure Pools Logo" class="img-fluid" style="max-width: 50%; height: auto;">
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Footer Bottom -->
+        <div class="text-center">
+            <p>&copy; 2024 Pure Pools. Website Developed by <a href="www.nativainnovations.com" style="text-decoration: none;color: #ffffff;" > Nativa Innovations </a>. Rights Reserved.</p>
+            <p>
+                <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | 
+                <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
